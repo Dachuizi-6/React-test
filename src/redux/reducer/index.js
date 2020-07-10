@@ -1,12 +1,15 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux'
 
-import loading from "./loading";
-import token from "./login";
+import loading from './loading'
+import token from './login'
 
-import { user } from "@comps/Authorized/redux";
-import { userList } from "@pages/Acl/User/redux";
-import { roleList } from "@pages/Acl/Role/redux";
-import { menuList } from "@pages/Acl/Permission/redux";
+import { user } from '@comps/Authorized/redux'
+import { userList } from '@pages/Acl/User/redux'
+import { roleList } from '@pages/Acl/Role/redux'
+import { menuList } from '@pages/Acl/Permission/redux'
+
+// 导入课程列表的reducer
+import { subjectList } from '@pages/Edu/Subject/redux'
 
 export default combineReducers({
   loading,
@@ -15,4 +18,5 @@ export default combineReducers({
   userList,
   roleList,
   menuList,
-});
+  subjectList,
+})
